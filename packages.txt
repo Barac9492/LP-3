@@ -1,5 +1,0 @@
-# System-level packages (optional)
-# Only uncomment if you encounter specific errors
-
-# libxml2-dev
-# libxslt1-dev
