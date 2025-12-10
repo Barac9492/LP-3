@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  lp-dashboard:
+    build: .
+    container_name: lp-monitor-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      # Persist database
+      - ./data:/app/data
+      # Persist logs
+      - ./logs:/app/logs
+      # Persist reports
+      - ./reports:/app/reports
+    environment:
+      # Add your API keys here or use .env file
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - EMAIL_ADDRESS=${EMAIL_ADDRESS:-}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD:-}
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL:-}
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+# Optional: Add PostgreSQL for production
+#  postgres:
+#    image: postgres:15-alpine
+#    container_name: lp-monitor-db
+#    environment:
+#      POSTGRES_DB: lp_monitor
+#      POSTGRES_USER: lp_user
+#      POSTGRES_PASSWORD: ${DB_PASSWORD:-change_me}
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data
+#    ports:
+#      - "5432:5432"
+#    restart: unless-stopped
+
+volumes:
+  postgres_data:

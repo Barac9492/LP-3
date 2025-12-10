@@ -1,0 +1,54 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs (will be created in container)
+logs/
+*.log
+
+# Database (will be created in container)
+*.db
+*.sqlite
+*.sqlite3
+
+# Reports (will be created in container)
+reports/
+
+# Documentation (not needed in container)
+*.md
+!README.md
+
+# Test files
+tests/
+pytest.ini
+.coverage
+htmlcov/
+
+# Environment files
+.env
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Other
+*.out
+nohup.out

@@ -1,0 +1,10 @@
+# System-level packages required for deployment
+# These will be installed via apt-get on Linux systems
+
+# For better HTML parsing
+libxml2-dev
+libxslt1-dev
+
+# For potential PDF generation
+# libcairo2-dev
+# libpango1.0-dev
