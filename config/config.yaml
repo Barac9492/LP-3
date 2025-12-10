@@ -1,0 +1,142 @@
+# LP Monitoring System Configuration
+
+# LP Institution Tiers
+lp_tiers:
+  tier1:  # High priority - very large, globally influential
+    - CalPERS
+    - CPPIB
+    - GIC
+    - Temasek
+    - NPS
+    - ADIA
+    - PIF
+    - GPFG
+  tier2:  # Medium priority
+    - CalSTRS
+    - Ontario Teachers
+    - GPIF
+
+# Search Configuration
+search:
+  sources:
+    - google_news
+    - web_search
+  lookback_days: 7
+  max_results_per_lp: 10
+  language: en
+
+# API Configuration (set via environment variables)
+api:
+  openai:
+    model: gpt-4
+    max_tokens: 1500
+    temperature: 0.3
+  anthropic:
+    model: claude-3-sonnet-20240229
+    max_tokens: 1500
+    temperature: 0.3
+
+# News Classification Categories
+categories:
+  - 신규_출자_약정  # New commitment
+  - 전략_변화      # Strategy change
+  - 인사_변동      # Personnel change
+  - 성과_발표      # Performance announcement
+  - 한국_관련      # Korea-related
+  - 일반_소식      # General news
+
+# Korea Relevance Scoring
+scoring:
+  keywords:
+    korea_direct: 5      # Korea, Korean, Seoul
+    korea_company: 5     # Korean company names
+    asia_focus: 4        # Asia, APAC
+    emerging_markets: 3  # Emerging markets
+    relevant_sector: 3   # AI, semiconductor, biotech
+    venture_general: 2   # General VC/PE news
+
+  sectors_of_interest:
+    - AI
+    - semiconductor
+    - biotech
+    - fintech
+    - consumer
+    - enterprise software
+
+  minimum_commitment_usd: 100000000  # $100M
+
+# Alert Configuration
+alerts:
+  enabled: true
+  email:
+    enabled: false  # Set to true when configured
+    smtp_server: smtp.gmail.com
+    smtp_port: 587
+    from_address: ""  # Set via environment variable
+    to_addresses: []  # Set via environment variable
+
+  slack:
+    enabled: false  # Set to true when configured
+    webhook_url: ""  # Set via environment variable
+
+  thresholds:
+    high_relevance_score: 4
+    large_commitment_usd: 500000000  # $500M
+    immediate_alert_score: 5
+
+# Report Configuration
+reports:
+  weekly:
+    enabled: true
+    day_of_week: Monday
+    time: "10:00"
+    format:
+      - markdown
+      - html
+
+  monthly:
+    enabled: true
+    day_of_month: 1
+    time: "10:00"
+    format:
+      - markdown
+      - html
+      - pdf
+
+  output_dir: reports/
+
+# Database Configuration
+database:
+  type: sqlite
+  path: data/news_archive.db
+  backup_enabled: true
+  backup_frequency_days: 7
+
+# Scheduler Configuration
+scheduler:
+  news_collection:
+    frequency: daily
+    time: "09:00"
+
+  weekly_report:
+    day: Monday
+    time: "10:00"
+
+  monthly_report:
+    day: 1
+    time: "10:00"
+
+# Logging Configuration
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/lp_monitor.log
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+# Performance Settings
+performance:
+  max_concurrent_requests: 5
+  request_delay_seconds: 1
+  timeout_seconds: 30
+  max_retries: 3

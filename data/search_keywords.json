@@ -1,0 +1,79 @@
+{
+  "investment_activities": [
+    "private equity commitment",
+    "venture capital allocation",
+    "fund investment",
+    "committed capital",
+    "new fund partnership",
+    "GP relationship",
+    "portfolio allocation"
+  ],
+  "strategic_keywords": [
+    "investment strategy",
+    "asset allocation",
+    "portfolio rebalancing",
+    "geographic expansion",
+    "sector focus",
+    "emerging markets",
+    "developed markets"
+  ],
+  "korea_related": [
+    "Korea",
+    "Korean",
+    "Seoul",
+    "South Korea",
+    "K-",
+    "Kospi",
+    "Kosdaq"
+  ],
+  "asia_related": [
+    "Asia",
+    "Asian",
+    "Asia-Pacific",
+    "APAC",
+    "emerging Asia",
+    "Southeast Asia",
+    "East Asia"
+  ],
+  "sectors": [
+    "AI",
+    "artificial intelligence",
+    "semiconductor",
+    "chip",
+    "biotech",
+    "healthcare",
+    "fintech",
+    "cleantech",
+    "SaaS",
+    "consumer tech",
+    "enterprise software",
+    "deep tech"
+  ],
+  "transaction_types": [
+    "primary commitment",
+    "secondary transaction",
+    "co-investment",
+    "direct investment",
+    "fund-of-funds",
+    "separate account"
+  ],
+  "personnel": [
+    "CIO",
+    "chief investment officer",
+    "portfolio manager",
+    "investment team",
+    "new hire",
+    "appointment",
+    "leadership change"
+  ],
+  "performance": [
+    "returns",
+    "performance",
+    "IRR",
+    "MOIC",
+    "DPI",
+    "TVPI",
+    "benchmark",
+    "outperformance"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "CalPERS": {
+    "full_name": "California Public Employees' Retirement System",
+    "country": "USA",
+    "aum": 440000000000,
+    "pe_allocation_pct": 8,
+    "focus_regions": ["North America", "Global"],
+    "website": "https://www.calpers.ca.gov",
+    "korea_interest": "medium",
+    "search_keywords": [
+      "CalPERS private equity",
+      "CalPERS venture capital",
+      "CalPERS alternative investments"
+    ]
+  },
+  "CalSTRS": {
+    "full_name": "California State Teachers' Retirement System",
+    "country": "USA",
+    "aum": 308000000000,
+    "pe_allocation_pct": 13,
+    "focus_regions": ["North America", "Global"],
+    "website": "https://www.calstrs.com",
+    "korea_interest": "medium",
+    "search_keywords": [
+      "CalSTRS private equity",
+      "CalSTRS venture capital",
+      "CalSTRS alternative investments"
+    ]
+  },
+  "CPPIB": {
+    "full_name": "Canada Pension Plan Investment Board",
+    "country": "Canada",
+    "aum": 570000000000,
+    "pe_allocation_pct": 16,
+    "focus_regions": ["Global", "North America", "Asia"],
+    "website": "https://www.cppinvestments.com",
+    "korea_interest": "high",
+    "search_keywords": [
+      "CPP Investments private equity",
+      "CPPIB venture capital",
+      "CPP Investments Asia"
+    ]
+  },
+  "Ontario Teachers": {
+    "full_name": "Ontario Teachers' Pension Plan",
+    "country": "Canada",
+    "aum": 247000000000,
+    "pe_allocation_pct": 11,
+    "focus_regions": ["Global", "North America"],
+    "website": "https://www.otpp.com",
+    "korea_interest": "medium",
+    "search_keywords": [
+      "Ontario Teachers private equity",
+      "OTPP venture capital",
+      "Ontario Teachers alternative investments"
+    ]
+  },
+  "GIC": {
+    "full_name": "GIC Private Limited",
+    "country": "Singapore",
+    "aum": 690000000000,
+    "pe_allocation_pct": 12,
+    "focus_regions": ["Asia", "Global"],
+    "website": "https://www.gic.com.sg",
+    "korea_interest": "high",
+    "search_keywords": [
+      "GIC investment",
+      "GIC private equity Asia",
+      "GIC venture capital"
+    ]
+  },
+  "Temasek": {
+    "full_name": "Temasek Holdings",
+    "country": "Singapore",
+    "aum": 382000000000,
+    "pe_allocation_pct": 25,
+    "focus_regions": ["Asia", "Global"],
+    "website": "https://www.temasek.com.sg",
+    "korea_interest": "high",
+    "search_keywords": [
+      "Temasek investment",
+      "Temasek venture capital",
+      "Temasek Asia"
+    ]
+  },
+  "NPS": {
+    "full_name": "National Pension Service",
+    "country": "South Korea",
+    "aum": 928000000000,
+    "pe_allocation_pct": 6,
+    "focus_regions": ["Korea", "Global"],
+    "website": "https://www.nps.or.kr",
+    "korea_interest": "very_high",
+    "search_keywords": [
+      "NPS Korea investment",
+      "National Pension Service private equity",
+      "NPS venture capital"
+    ]
+  },
+  "GPIF": {
+    "full_name": "Government Pension Investment Fund",
+    "country": "Japan",
+    "aum": 1600000000000,
+    "pe_allocation_pct": 0.5,
+    "focus_regions": ["Japan", "Global"],
+    "website": "https://www.gpif.go.jp",
+    "korea_interest": "low",
+    "search_keywords": [
+      "GPIF investment",
+      "GPIF private equity",
+      "GPIF alternative investments"
+    ]
+  },
+  "ADIA": {
+    "full_name": "Abu Dhabi Investment Authority",
+    "country": "UAE",
+    "aum": 900000000000,
+    "pe_allocation_pct": 8,
+    "focus_regions": ["Global", "Asia", "Middle East"],
+    "website": "https://www.adia.ae",
+    "korea_interest": "medium",
+    "search_keywords": [
+      "ADIA investment",
+      "ADIA private equity",
+      "Abu Dhabi Investment Authority venture capital"
+    ]
+  },
+  "PIF": {
+    "full_name": "Public Investment Fund",
+    "country": "Saudi Arabia",
+    "aum": 700000000000,
+    "pe_allocation_pct": 10,
+    "focus_regions": ["Middle East", "Global", "Asia"],
+    "website": "https://www.pif.gov.sa",
+    "korea_interest": "medium",
+    "search_keywords": [
+      "PIF Saudi investment",
+      "Public Investment Fund private equity",
+      "PIF venture capital"
+    ]
+  },
+  "GPFG": {
+    "full_name": "Government Pension Fund Global",
+    "country": "Norway",
+    "aum": 1400000000000,
+    "pe_allocation_pct": 0.1,
+    "focus_regions": ["Global", "Europe"],
+    "website": "https://www.nbim.no",
+    "korea_interest": "low",
+    "search_keywords": [
+      "Norway sovereign wealth fund",
+      "GPFG investment",
+      "Norway pension fund private equity"
+    ]
+  }
+}
